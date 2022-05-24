@@ -6,7 +6,7 @@ import { Construct } from 'constructs';
 import { TeamPlatform, TeamApplication } from '../teams'; // HERE WE IMPORT TEAMS
 
 export default class PipelineConstruct extends Construct {
-  constructor(scope: Construct: string, props?: cdk.StackProps){
+  constructor(scope: Construct, id:string, props?: cdk.StackProps){
     super(scope,id)
 
     const account = props?.env?.account!;
